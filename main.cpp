@@ -13,7 +13,7 @@ PHPCPP_EXPORT void *get_module() {
     
     Php::Namespace cxNamespace("Cx");
 
-    cxNamespace.add(snow);
+    cxNamespace.add(std::move(snow));
 
     myExtension.add(std::move(cxNamespace));
 
