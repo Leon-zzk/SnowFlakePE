@@ -10,7 +10,7 @@ PS:应该有静态编译生成扩展的方式使得可以不再依赖系统预�
 安装好php-cpp后，下载SnowFlakePE，解押进入其目录，直接make，然后make install即可，接着修改php.ini的文件填上extension=snowflake;
 
 使用示例
-$work = new \SnowFlake(23);
+$work = new \Cx\SnowFlake(23);
 
 for ($i = 0; $i < 100; $i++) {
 
