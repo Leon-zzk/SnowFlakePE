@@ -3,7 +3,7 @@
 
 感谢PHP-CPP让我等菜鸟也能写PHP扩展，由于本扩展依赖php-cpp库，所以需要先安装php-cpp，参考http://www.php-cpp.com/documentation/install
 
-PS:应该有静态编译生成的扩展可以不再依赖系统预先装php-cpp，希望知道的看官不吝赐教。
+PS:应该有静态编译生成扩展的方式使得可以不再依赖系统预先装php-cpp，希望知道的看官不吝赐教。
 
 如php-cpp官方所言，仅支持unix相关的系统，所以请在unix系统下使用此扩展
 
@@ -11,7 +11,12 @@ PS:应该有静态编译生成的扩展可以不再依赖系统预先装php-cpp�
 
 使用示例
 $work = new \SnowFlake(23);
+
 for ($i = 0; $i < 100; $i++) {
+
     $id = $work->genId();
+    
     echo $id . "<br>";
+    
 }
+
