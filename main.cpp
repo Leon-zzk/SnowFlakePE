@@ -10,8 +10,12 @@ PHPCPP_EXPORT void *get_module() {
             Php::ByVal("workId", Php::Type::Numeric, true)
     });
     snow.method<&SnowFlake::gen_id>("genId");
+    
+    Php::Namespace cxNamespace("Cx");
 
-    myExtension.add(std::move(snow));
+    cxNamespace.add(snow);
+
+    myExtension.add(std::move(cxNamespace));
 
     return myExtension.module();
 }
