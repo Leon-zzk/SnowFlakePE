@@ -23,4 +23,4 @@ for ($i = 0; $i < 100; $i++) {
 可以使用提供的bench.php文件测试下扩展和使用php代码提供同样功能的性能差别(php bench.php),感觉微乎其微
 
 
-有些同学安装PHP-CPP的问题，由于PHP7.1和7.0的版本没有zend_empty_string变量声明，安装php-cpp的时候会出现zend/classimpl.cpp:307:35: error: use of undeclared identifier 'zend_empty_string'这个错误，找到对应的文件，把zend_empty_string改成nullptr即可（php7.2以上的版本没有这个问题）
+有些同学安装PHP-CPP时会遇到这个问题，由于PHP7.1和7.0的版本没有zend_empty_string变量声明，安装php-cpp2.2.0版的时候会出现zend/classimpl.cpp:307:35: error: use of undeclared identifier 'zend_empty_string'这个错误，找到对应的文件，把zend_empty_string改成nullptr即可（php7.2以上的版本没有这个问题）
