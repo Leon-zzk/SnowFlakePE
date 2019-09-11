@@ -1,7 +1,7 @@
 # SnowFlakePE
 依赖于PHP-CPP的一个snowflake算法，目前比较生硬，不怎么灵活，仅支持PHP7以上版本
 
-感谢PHP-CPP让我等菜鸟也能写PHP扩展，由于本扩展依赖php-cpp库，所以需要先安装php-cpp，参考http://www.php-cpp.com/documentation/install
+感谢PHP-CPP让我等菜鸡也能写PHP扩展，由于本扩展依赖php-cpp库，所以需要先安装php-cpp，参考http://www.php-cpp.com/documentation/install
 
 PS:应该有静态编译生成扩展的方式使得可以不再依赖系统预先装php-cpp，希望知道的看官不吝赐教。
 
